@@ -22,8 +22,8 @@ const atencion3 = new Nodo ({
     costo: 150000
 });
 
-console.log("Primera atención:", atencion1);
+atencion1.siguiente=atencion2;
+atencion2.siguiente=atencion3;
+let cabeza=atencion1
 
-console.log("Segunda atención:", atencion2);
-
-console.log("Tercera atención:", atencion3);
+console.log(cabeza.siguiente.dato);
