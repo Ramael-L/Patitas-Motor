@@ -1,3 +1,5 @@
+
+
 const Nodo = require("../src/Nodo.js");
 
 const atencion1 = new Nodo ({
@@ -24,6 +26,24 @@ const atencion3 = new Nodo ({
 
 atencion1.siguiente=atencion2;
 atencion2.siguiente=atencion3;
-let cabeza=atencion1
+let cabeza=atencion1;
 
-console.log(cabeza.siguiente.dato);
+
+let actual = cabeza;
+while (actual !==null){
+
+console.log(actual.dato);
+
+actual = actual.siguiente
+
+}
+
+let costototal = 0;
+let actualCosto = cabeza;
+
+while (actualCosto !== null) {
+
+    costototal += actualCosto.dato.costo;
+    actualCosto = actualCosto.siguiente
+}
+console.log("costo total:",costototal)
