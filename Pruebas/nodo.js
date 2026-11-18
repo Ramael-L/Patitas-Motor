@@ -47,3 +47,11 @@ while (actualCosto !== null) {
     actualCosto = actualCosto.siguiente
 }
 console.log("costo total:",costototal)
+
+atencion1.siguiente= null;
+console.log("despues de comper el enlace");
+let actualroto = cabeza; 
+while (actualroto !== null) {
+    console.log(actualroto.dato);
+    actualroto = actualroto.siguiente;
+}
