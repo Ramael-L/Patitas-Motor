@@ -30,7 +30,7 @@ function comprobar(lista, datos, primera, ultima) {
 
 
 
-// Los tres casos de agregar al final.
+// Los tres casos de agregar al final
 const listaFinal = new ListaEnlazada();
 
 listaFinal.agregarAlFinal("A");
@@ -58,7 +58,7 @@ console.log("3. Final en lista con varios nodos: OK");
 
 
 
-// Los tres casos de agregar al inicio.
+// Los tres casos de agregar al inicio
 const listaInicio = new ListaEnlazada();
 listaInicio.agregarAlInicio("C");
 
@@ -85,7 +85,7 @@ console.log("6. Inicio en lista con varios nodos: OK");
 
 
 
-// El callback recibe un dato por cada nodo.
+// El callback recibe un dato por cada nodo
 const visitados = [];
 listaInicio.recorrer((dato) => {
     visitados.push(dato);
